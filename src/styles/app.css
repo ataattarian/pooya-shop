@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'public/fonts/font.css';
+@import './variables.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  user-select: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "vazir";
+  -webkit-tap-highlight-color: transparent;
+  direction: rtl;
+}
+
+body {
+  color: var(--body-color);
+  background-color: var(--bg-primary);
+  transition: 200ms ease-in-out;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}

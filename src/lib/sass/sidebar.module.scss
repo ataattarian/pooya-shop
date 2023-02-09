@@ -1,0 +1,27 @@
+.sidebar {
+  @apply w-64 bg-secondary border border-line h-screen fixed top-0 p-5 duration-300 z-50;
+}
+
+.active {
+    @apply right-0;
+}
+
+.logo {
+  @apply flex items-center gap-4;
+
+  img {
+    @apply w-10 h-10;
+  }
+
+  h2 {
+    @apply font-black text-2xl;
+  }
+}
+
+.sidebar-list {
+    @apply flex flex-col mt-6;
+
+    li {
+        @apply py-2 leading-6 hover:text-heading font-medium duration-200 cursor-pointer;
+    }
+}

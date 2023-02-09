@@ -1,0 +1,31 @@
+.header {
+    @apply bg-secondary border-b border-line;
+}
+
+.navbar {
+    @apply p-4 flex items-center justify-between max-w-screen-xl mx-auto;
+}
+
+.logo {
+    @apply flex items-center gap-4;
+
+    img {
+        @apply w-10 h-10;
+    }
+
+    h2 {
+        @apply font-black text-2xl;
+    }
+}
+
+.nav-list {
+    @apply justify-center items-center flex-1 hidden lg:flex xl:flex;
+
+    li {
+        @apply font-medium px-4 py-2 hover:text-blue dark:hover:text-white cursor-pointer duration-150;
+    }
+}
+
+.nav-menu {
+    @apply lg:hidden xl:hidden flex justify-center items-center p-2 bg-secondary border border-line rounded-xl;
+}
