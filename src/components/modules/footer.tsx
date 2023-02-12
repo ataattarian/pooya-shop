@@ -77,7 +77,7 @@ export default function Footer() {
           </div>
         </div>
         <hr className="my-8 border-line" />
-        <p className="text-sm text-center">© تمامی حقوق این وبسایت متعلق به سهیل قنبری میباشد</p>
+        <p className="text-sm text-center">© تمامی حقوق این وبسایت متعلق به محمد قاسمی میباشد</p>
       </div>
     </footer>
   );
