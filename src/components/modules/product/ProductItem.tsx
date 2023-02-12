@@ -2,7 +2,6 @@ import BlurImage from "@/components/atoms/blur-image";
 import Icon from "@/components/atoms/icon";
 import { CartsContext } from "@/lib/contexts";
 import { ProductProps } from "@/lib/interfaces";
-import Link from "next/link";
 import { toast, Toaster } from "react-hot-toast";
 import { useRecoilState } from "recoil";
 
@@ -24,16 +23,13 @@ export default function Product(product: ProductProps) {
     }
   };
 
-  const url = new URL(product.image);
-  url.port = "1337";
-
   return (
     <>
       <div
         key={product.id}
         className="p-4 rounded-xl bg-secondary border border-line cursor-pointer"
       >
-        <BlurImage alt={product.name} src={url.toString()} />
+        <BlurImage alt={product.name} src={product.image} />
         <div className="flex flex-col mt-4">
           <h2 className="text-sm text-heading font-medium leading-7">
             {product.name}

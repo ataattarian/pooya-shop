@@ -3,7 +3,7 @@ import { LoginProps, RegisterProps } from "../interfaces";
 
 export async function login(formData: LoginProps) {
   const { data } = await axios.post(
-    "http://212.24.97.65:1337/user/login/",
+    "https://project.lgscloud.xyz/user/login/",
     formData
   );
   return data;
@@ -11,7 +11,7 @@ export async function login(formData: LoginProps) {
 
 export async function signUp(formData: RegisterProps) {
   const { data } = await axios.post(
-    "http://212.24.97.65:1337/user/register/",
+    "https://project.lgscloud.xyz/user/register/",
     formData
   );
   return data;

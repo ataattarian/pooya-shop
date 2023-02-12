@@ -2,7 +2,7 @@ import axios from "axios";
 
 export async function getProducts() {
   const { data } = await axios.get(
-    "http://212.24.97.65:1337/pictures"
+    "https://project.lgscloud.xyz/pictures"
   );
   return data;
 }

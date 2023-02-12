@@ -51,9 +51,6 @@ export default function CartsPage() {
 const CardCart = (cart: CartProps) => {
   const [carts, setCarts] = useRecoilState(CartsContext);
 
-  const url = new URL(cart.image);
-  url.port = "1337";
-
   const incrementQty = (id: number) => {
     setCarts(
       carts.map((cart) => {
@@ -81,7 +78,7 @@ const CardCart = (cart: CartProps) => {
       key={cart.id}
       className="p-6 flex gap-6 bg-secondary border border-line rounded-xl"
     >
-      <img src={url.toString()} className="rounded-xl w-24 h-24" />
+      <img src={cart.image} className="rounded-xl w-24 h-24" />
       <div className="flex flex-col gap-2">
         <h2 className="text-lg text-heading font-medium">{cart.name}</h2>
         <p>{cart.price}.000 تومان</p>
